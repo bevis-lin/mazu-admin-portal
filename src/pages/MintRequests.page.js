@@ -2,8 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Table, Image, Button, Divider } from 'semantic-ui-react';
 import { useAuth } from '../providers/AuthProvider';
-const baseURL = '/mint/requests';
-const baseURLApprove = '/mint/requests/approve';
+const baseURL = '/api/mint/requests';
+const baseURLApprove = '/api/mint/requests/approve';
 
 export default function MintRequests() {
   const [mintRequests, setMintRequests] = useState(null);

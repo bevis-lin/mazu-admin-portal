@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const baseURL = '/login';
+const baseURL = '/api/login';
 
 export default function useCurrentUser() {
   useEffect(() => {
