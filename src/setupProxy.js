@@ -4,7 +4,8 @@ module.exports = function (app) {
   app.use(
     '/api/*',
     createProxyMiddleware({
-      target: 'https://api.testnet.sentimen.art/',
+      //target: 'https://api.testnet.sentimen.art/',
+      target: 'http://127.0.0.1:8081',
       changeOrigin: true,
     })
   );
